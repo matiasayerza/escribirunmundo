@@ -71,7 +71,48 @@ section {
 }
 
 #mentoria {
-    /* Estilos para la columna "pop-up" */
+    background-color: #f9f9f9;
+}
+
+#comunidad {
+    background-image: url('path-to-background-image.jpg'); /* Cambia el path por tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#apuntes {
+    background-color: #f4f4f4;
+}
+
+/* Encabezados de secciones */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la columna "pop-up" */
 .popup-container {
     position: fixed;
     right: 20px; /* Ajusta la distancia del borde derecho */
@@ -104,8 +145,25 @@ section {
     font-size: 1rem; /* Tamaño del texto */
 }
 
-    background-color: #f9f9f9;
+/* Animaciones */
+header h1, header p {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-#comunidad {
-    background-image: url('path-to-background-imag
+header:hover h1, header:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
