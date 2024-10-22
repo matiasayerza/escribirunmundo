@@ -167,3 +167,42 @@ section.in-view {
     opacity: 1;
     transform: translateY(0);
 }
+/* ... El resto del CSS anterior ... */
+
+/* Fondo de la página */
+body {
+    background-image: url('eum-2023 2.png'); /* Cambia esto por tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navegación */
+nav {
+    display: flex; /* Usamos flexbox para alinear los enlaces en una fila */
+    justify-content: center; /* Centra los enlaces */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    padding: 15px 30px; /* Espaciado dentro de las "cajas" */
+    text-decoration: none;
+    color: #ffffff; /* Color del texto */
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(0, 123, 255, 0.7); /* Fondo azul semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto hover */
+nav a:hover {
+    background-color: rgba(0, 123, 255, 1); /* Fondo azul sólido al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* ... El resto del CSS anterior ... */
