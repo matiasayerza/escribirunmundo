@@ -116,7 +116,7 @@ button:hover {
 .popup-container {
     position: fixed;
     right: 20px; /* Ajusta la distancia del borde derecho */
-    top: 100px; /* Ajusta la distancia del borde superior */
+    top: 150px; /* Ajusta la distancia del borde superior */
     width: 200px; /* Ancho de la columna */
     background-color: #ffffff; /* Fondo blanco */
     border: 2px solid #007BFF; /* Borde azul */
