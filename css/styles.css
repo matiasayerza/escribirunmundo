@@ -1,66 +1,169 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escribir un Mundo - Mentorías de Dramaturgia</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Escribir un Mundo</h1>
-        <p>Mentorías de dramaturgia para crear tu propia obra</p>
-    </header>
+/* Tipografía */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-    <nav>
-        <a href="#mentoria">Mentoría</a>
-        <a href="#comunidad">Comunidad</a>
-        <a href="#apuntes">Apuntes</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
 
-    <div class="popup-container">
-        <div class="popup">
-            <h2>La autora del mes</h2>
-            <p>Nombre de la autora</p>
-        </div>
-    </div>
+/* Colores */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <section id="mentoria">
-        <h2>Sobre la Mentoría</h2>
-        <p>Explora cómo nuestras mentorías pueden ayudarte a desarrollar tus habilidades en dramaturgia.</p>
-    </section>
+nav a {
+    color: #007BFF;
+}
 
-    <section id="comunidad">
-        <h2>Comunidad</h2>
-        <p>Lee los textos de nuestros alumnos y mira sus testimonios en vídeo.</p>
-    </section>
+nav a:hover {
+    color: #0056b3;
+}
 
-    <section id="apuntes">
-        <h2>Apuntes</h2>
-        <p>Reflexiones y textos inspiradores sobre dramaturgia y creación de mundos narrativos.</p>
-    </section>
+header {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Ponte en contacto para saber más sobre nuestras mentorías.</p>
-        <button>Contactar</button>
-    </section>
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
 
-    <footer>
-        <p>&copy; 2024 Escribir un Mundo. Todos los derechos reservados.</p>
-    </footer>
+header p {
+    font-size: 1.5rem;
+}
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const popupContainer = document.querySelector('.popup-container');
-            
-            // Mostrar la columna después de 1 segundo
-            setTimeout(() => {
-                popupContainer.classList.add('show');
-            }, 1000); // 1000 milisegundos = 1 segundo
-        });
-    </script>
-</body>
-</html>
+/* Navegación */
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Secciones */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#mentoria {
+    background-color: #f9f9f9;
+}
+
+#comunidad {
+    background-image: url('path-to-background-image.jpg'); /* Cambia el path por tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#apuntes {
+    background-color: #f4f4f4;
+}
+
+/* Encabezados de secciones */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la columna "pop-up" */
+.popup-container {
+    position: fixed;
+    right: 20px; /* Ajusta la distancia del borde derecho */
+    top: 100px; /* Ajusta la distancia del borde superior */
+    width: 200px; /* Ancho de la columna */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    padding: 15px; /* Espacio interno */
+    transition: transform 0.3s ease; /* Suaviza la entrada */
+    transform: translateY(-20px); /* Inicialmente fuera de vista */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Mostrar la columna cuando esté en vista */
+.popup-container.show {
+    transform: translateY(0); /* Mueve a su posición original */
+    opacity: 1; /* Hace visible */
+}
+
+/* Estilos para el título y el contenido */
+.popup h2 {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.popup p {
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Animaciones */
+header h1, header p {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+header:hover h1, header:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
