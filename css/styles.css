@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     background-color: #f4f4f4;
+    margin: 0; /* Elimina margen por defecto */
 }
 
 h1, h2 {
@@ -11,19 +12,6 @@ h1, h2 {
 }
 
 /* Colores */
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-nav a {
-    color: #007BFF;
-}
-
-nav a:hover {
-    color: #0056b3;
-}
-
 header {
     background-color: #333;
     color: white;
@@ -54,13 +42,13 @@ nav {
 nav a {
     margin: 0 30px;
     text-decoration: none;
-    color: #333;
+    color: #007BFF; /* Color por defecto */
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: #0056b3; /* Color al pasar el ratón */
 }
 
 /* Secciones */
@@ -70,15 +58,17 @@ section {
     background-color: #ffffff;
 }
 
+/* Secciones específicas */
 #mentoria {
     background-color: #f9f9f9;
 }
 
 #comunidad {
-    background-image: url('path-to-background-image.jpg'); /* Cambia el path por tu imagen */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    /* Si quieres usar un fondo de imagen, asegúrate de tener la imagen correcta */
+    /* background-image: url('path-to-background-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    color: black; /* Cambié a negro para mayor legibilidad */
 }
 
 #apuntes {
