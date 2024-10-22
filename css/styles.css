@@ -2,9 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
-    background-image: url('eum-2023 2.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
+    background-color: #FFA500; /* Color de fondo naranja */
 }
 
 h1, h2 {
@@ -13,15 +11,6 @@ h1, h2 {
 }
 
 /* Colores */
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-nav a {
-    color: #ffffff; /* Color del texto en el menú */
-}
-
 header {
     background-color: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente para el encabezado */
     color: white;
@@ -82,10 +71,8 @@ section {
 }
 
 #comunidad {
-    background-image: url('path-to-background-image.jpg'); /* Cambia el path por tu imagen */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: rgba(249, 249, 249, 0.9);
+    color: black;
 }
 
 #apuntes {
