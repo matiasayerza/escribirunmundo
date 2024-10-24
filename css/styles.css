@@ -77,3 +77,8 @@ footer {
     background-color: #333;
     color: white;
 }
+#typed-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
