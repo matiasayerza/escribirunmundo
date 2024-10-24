@@ -1,8 +1,17 @@
-/* General */
+/* Tipografía */
 body {
     font-family: 'Cabin', sans-serif;
     color: #333;
     background-color: #f4f4f4;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+a, p {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
@@ -25,9 +34,10 @@ header {
     justify-content: center;
 }
 
-h1, h2 {
+h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ffffff;
 }
 
 /* Secciones */
@@ -44,9 +54,7 @@ section {
     padding: 30px;
     border-radius: 10px;
 }
-a, p {
-    font-family: 'Poppins', sans-serif;
-}
+
 a {
     display: inline-block;
     margin-top: 20px;
