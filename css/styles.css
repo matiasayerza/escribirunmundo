@@ -1,8 +1,8 @@
 /* General */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Cabin', sans-serif;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 /* Header */
@@ -25,10 +25,9 @@ header {
     justify-content: center;
 }
 
-h2 {
+h1, h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #ffffff;
+    font-weight: 700;
 }
 
 /* Secciones */
@@ -45,7 +44,9 @@ section {
     padding: 30px;
     border-radius: 10px;
 }
-
+a, p {
+    font-family: 'Poppins', sans-serif;
+}
 a {
     display: inline-block;
     margin-top: 20px;
